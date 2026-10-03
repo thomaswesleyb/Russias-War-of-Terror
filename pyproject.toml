@@ -1,0 +1,20 @@
+[project]
+name = "russian-war-of-terror"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib==3.11.2",
+    "pandas==3.0.6",
+]
+
+[dependency-groups]
+dev = [
+    "ruff==0.16.10",
+    "ty==0.0.84",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
